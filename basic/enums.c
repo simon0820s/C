@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-enum laboralWeek {Lunes,Martes,Miercoles,Jueves,Viernes};
+enum deck
+{
+    diamonds=5,
+    hearts=10,
+    spades=15,
+    club=0
+}card;
     
 int main()
 {
-    enum laboralWeek today;
-    today=Miercoles;
-    printf("Hoy es: %d",today+1);
-    printf("size: %d",sizeof(today));
+    card=spades;
+    printf("Size of card: %ld",sizeof(spades));
     return 0;
 }
